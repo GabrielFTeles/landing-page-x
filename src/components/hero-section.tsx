@@ -1,10 +1,11 @@
 import { Button } from "./ui/button";
 
 import heroImage from "../assets/hero-image.png";
+import { Brain, ChartPie, Zap } from "lucide-react";
 
 export const HeroSection = () => {
   return (
-    <section className="max-w-screen-2xl mx-auto py-20 px-8">
+    <section className="max-w-screen-2xl mx-auto pt-20 pb-10 px-8">
       <div className="max-w-[800px] mx-auto">
         <h1 className="text-6xl text-center font-bold">
           Análise empresarial com{" "}
@@ -32,9 +33,55 @@ export const HeroSection = () => {
         <Button size="lg">Experimente gratuitamente por 14 dias</Button>
       </div>
 
-      <div className="mt-16 flex justify-center items-center gap-4">
+      <div className="mt-16 flex flex-col justify-center items-center gap-4">
         <div className="mx-auto max-w-screen-xl border p-4 rounded-xl">
           <img src={heroImage} alt="Hero" />
+        </div>
+      </div>
+
+      <div className="mt-12 flex justify-between gap-2 max-w-screen-xl mx-auto">
+        <div className="flex gap-2 max-w-[350px]">
+          <div className="p-4 bg-blue-500/80 rounded-lg h-fit">
+            <Brain className="text-white size-8" />
+          </div>
+
+          <div>
+            <h3 className="text-xl font-bold">Inteligência Artificial</h3>
+
+            <p className="text-muted-foreground">
+              Transforme perguntas simples em análises poderosas, com nossa IA
+              que entende seu negócio.
+            </p>
+          </div>
+        </div>
+
+        <div className="flex gap-2 max-w-[350px]">
+          <div className="p-4 bg-emerald-500/80 rounded-lg h-fit">
+            <Zap className="text-white size-8" />
+          </div>
+
+          <div>
+            <h3 className="text-xl font-bold">Respostas Instantâneas</h3>
+
+            <p className="text-muted-foreground">
+              Obtenha insights e visualizações em segundos, sem necessidade de
+              configurações complexas.
+            </p>
+          </div>
+        </div>
+        <div className="flex gap-2 max-w-[350px]">
+          <div className="p-4 bg-purple-500/80 rounded-lg h-fit">
+            <ChartPie className="text-white size-8" />
+          </div>
+
+          <div>
+            <h3 className="text-xl font-bold">Análise Avançada</h3>
+
+            <p className="text-muted-foreground">
+              Transforme perguntas simples em análises poderosas com nossa IA
+              que entende seu negócio.
+            </p>
+          </div>
         </div>
       </div>
     </section>
