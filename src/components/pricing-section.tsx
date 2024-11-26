@@ -3,6 +3,7 @@ import { Button } from "./ui/button";
 import { Separator } from "./ui/separator";
 import React, { useState } from "react";
 import { motion } from "motion/react";
+import { Check } from "lucide-react";
 
 interface Plan {
   popular?: boolean;
@@ -24,7 +25,12 @@ const plans: Array<Plan> = [
       monthly: 0,
       annual: 0,
     },
-    features: ["1 usuário", "1 empresa", "Suporte por e-mail"],
+    features: [
+      "1 usuário",
+      "1 CNPJ",
+      "Até 5.000 notas/mês",
+      "Suporte por e-mail",
+    ],
   },
   {
     title: "Plano Básico",
@@ -33,7 +39,12 @@ const plans: Array<Plan> = [
       monthly: 399.99,
       annual: 3839.99,
     },
-    features: ["1 usuário", "10 empresas", "Suporte por e-mail"],
+    features: [
+      "3 usuários",
+      "1 CNPJ",
+      "Até 10.000 notas/mês",
+      "Suporte por e-mail, chat e telefone",
+    ],
   },
   {
     popular: true,
@@ -43,7 +54,12 @@ const plans: Array<Plan> = [
       monthly: 999.99,
       annual: 9599.99,
     },
-    features: ["5 usuários", "50 empresas", "Suporte por e-mail e telefone"],
+    features: [
+      "3 CNPJs",
+      "10 usuários",
+      "Até 20.000 notas/mês",
+      "Suporte prioritário 24/7, via chat, e-mail e telefone",
+    ],
   },
   {
     title: "Plano Empresarial",
@@ -54,9 +70,8 @@ const plans: Array<Plan> = [
       annual: 0,
     },
     features: [
-      "10 usuários",
-      "Empresas ilimitadas",
-      "Suporte 24/7, via chat, e-mail e telefone",
+      "Totalmente personalizado de acordo com a necessidade da empresa.",
+      "Suporte prioritário 24/7, via chat, e-mail e telefone",
     ],
   },
 ];
@@ -124,9 +139,12 @@ const PricingCard: React.FC<PricingCardProps> = ({
 
       <Separator className="my-6" />
 
-      <ul className="space-y-2">
+      <ul className="space-y-4">
         {features.map((feature) => (
-          <li key={feature}>{feature}</li>
+          <li key={feature} className="flex gap-1 items-start">
+            <Check className="min-w-4 w-4 h-4 text-blue-600" />
+            <p className="leading-none">{feature}</p>
+          </li>
         ))}
       </ul>
 
