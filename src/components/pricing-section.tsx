@@ -149,7 +149,12 @@ const PricingCard: React.FC<PricingCardProps> = ({
       </ul>
 
       <div className="flex-1 flex items-end">
-        <Button className="mt-8 w-full py-6 bg-blue-500 hover:bg-blue</div>-600">
+        <Button
+          className={cn(
+            "mt-8 rounded-lg w-full p-4 hover:ring-offset-2 hover:ring-blue-500 bg-blue-500 hover:bg-blue-500 hover:ring-2 transition-all duration-200",
+            popular && "ring-offset-[#1F1A1C]"
+          )}
+        >
           {custom ? "Agendar consulta" : "Escolher plano"}
         </Button>
       </div>
