@@ -1,4 +1,5 @@
 import { CallToActionSection } from "./components/call-to-action-section";
+import { DemoSection } from "./components/demo-section/demo-section";
 import { FaqSection } from "./components/faq-section";
 import { Header } from "./components/header";
 import { HeroSection } from "./components/hero-section";
@@ -14,6 +15,7 @@ export function App() {
 
       <main className="min-h-[10000dvh] relative">
         <HeroSection />
+        <DemoSection />
         <TestimonialSection />
         <PricingSection />
         <FaqSection />
