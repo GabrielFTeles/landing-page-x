@@ -41,15 +41,14 @@ const chartData = [
   },
 ];
 
-// Configuração de cores e labels
 const chartConfig = {
   analytics: {
     label: "Analytics IA",
-    color: "hsl(var(--chart-3))", // Azul
+    color: "hsl(var(--chart-3))",
   },
   automation: {
     label: "Automação IA",
-    color: "hsl(var(--chart-2))", // Verde
+    color: "hsl(var(--chart-2))",
   },
 } satisfies ChartConfig;
 
