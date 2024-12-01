@@ -1,4 +1,4 @@
-import { BarChartDemo } from "./bar-chart-demo";
+import { ComparisonChart } from "./comparison-chart";
 
 export const DemoSection = () => {
   return (
@@ -30,14 +30,13 @@ export const DemoSection = () => {
       <div className="mt-10 flex flex-col gap-4">
         <div className="p-4 bg-background shadow-sm border rounded-lg col-span-2">
           <p className="p-2 bg-muted rounded-lg">
-            "Analise o desempenho dos meus produtos no segundo semestre de 2023.
-            Me mostre tendências, pontos de atenção e oportunidades para cada
-            produto."
+            "Me mostre o faturamento dos últimos 6 meses de 2024, comparado com
+            2023."
           </p>
         </div>
 
         <div className="p-6 border rounded-lg">
-          <BarChartDemo />
+          <ComparisonChart />
         </div>
 
         <div className="p-6 border rounded-lg bg-muted"></div>

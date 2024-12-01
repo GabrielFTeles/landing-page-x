@@ -10,49 +10,49 @@ import {
 
 const chartData = [
   {
-    month: "Jul/23",
-    analytics: 145000,
-    automation: 95000,
+    month: "Jul",
+    "2024": 178000,
+    "2023": 145000,
   },
   {
-    month: "Ago/23",
-    analytics: 132000, // Queda sazonal
-    automation: 108000,
+    month: "Ago",
+    "2024": 165000,
+    "2023": 132000,
   },
   {
-    month: "Set/23",
-    analytics: 188000, // Recuperação forte
-    automation: 92000, // Queda inesperada
+    month: "Set",
+    "2024": 215000,
+    "2023": 188000,
   },
   {
-    month: "Out/23",
-    analytics: 175000, // Leve retração
-    automation: 156000, // Crescimento expressivo
+    month: "Out",
+    "2024": 198000,
+    "2023": 175000,
   },
   {
-    month: "Nov/23",
-    analytics: 248000, // Black Friday
-    automation: 189000, // Crescimento estável
+    month: "Nov",
+    "2024": 278000,
+    "2023": 248000,
   },
   {
-    month: "Dez/23",
-    analytics: 235000, // Leve queda pós Black Friday
-    automation: 225000, // Pico de fim de ano
+    month: "Dez",
+    "2024": 292000,
+    "2023": 235000,
   },
 ];
 
 const chartConfig = {
-  analytics: {
-    label: "Analytics IA",
+  "2024": {
+    label: "2024",
     color: "hsl(var(--chart-3))",
   },
-  automation: {
-    label: "Automação IA",
+  "2023": {
+    label: "2023",
     color: "hsl(var(--chart-2))",
   },
 } satisfies ChartConfig;
 
-export const BarChartDemo = () => {
+export const ComparisonChart = () => {
   return (
     <ChartContainer
       config={chartConfig}
@@ -90,16 +90,8 @@ export const BarChartDemo = () => {
             />
           }
         />
-        <Bar
-          dataKey="analytics"
-          fill="var(--color-analytics)"
-          radius={[4, 4, 0, 0]}
-        />
-        <Bar
-          dataKey="automation"
-          fill="var(--color-automation)"
-          radius={[4, 4, 0, 0]}
-        />
+        <Bar dataKey="2024" fill="var(--color-2024)" radius={[4, 4, 0, 0]} />
+        <Bar dataKey="2023" fill="var(--color-2023)" radius={[4, 4, 0, 0]} />
         <ChartLegend content={<ChartLegendContent />} />
       </BarChart>
     </ChartContainer>
