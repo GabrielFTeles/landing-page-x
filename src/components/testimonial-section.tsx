@@ -43,7 +43,12 @@ export const TestimonialCard: React.FC<TestimonialCardProps> = ({
 
 export const TestimonialSection = () => {
   return (
-    <section className="py-16 bg-[#F5F9FC]">
+    <section
+      className="pt-16 pb-48 bg-[#F5F9FC]"
+      style={{
+        clipPath: "polygon(0 0, 100% 0, 100% 90%, 0 100%)",
+      }}
+    >
       <div className="flex flex-col items-center max-w-[500px] mx-auto text-center">
         <h3 className="font-mono uppercase tracking-tighter text-sm text-blue-800">
           Depoimentos

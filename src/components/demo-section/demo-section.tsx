@@ -34,7 +34,7 @@ export const DemoSection = () => {
         </div>
 
         <div className="mt-10 flex flex-col gap-4">
-          <div className="p-4 bg-[#0B2E4E] shadow-sm rounded-lg col-span-2">
+          <div className="p-4 bg-background shadow-sm rounded-lg col-span-2">
             <p className="p-2 bg-muted rounded-lg">
               "Me mostre o faturamento dos últimos 6 meses de 2024, comparado
               com 2023."
