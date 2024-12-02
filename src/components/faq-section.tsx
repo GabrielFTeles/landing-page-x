@@ -68,7 +68,7 @@ const FaqItem: React.FC<FaqItemProps> = ({ value, question, answer }) => {
 
 export const FaqSection = () => {
   return (
-    <section className="pb-28 bg-muted pt-14 mx-auto px-4 border-y">
+    <section className="pb-28 bg-muted pt-14 mx-auto px-4">
       <div className="max-w-screen-md mx-auto flex flex-col items-center">
         <h3 className="font-mono uppercase tracking-tight text-sm text-blue-800">
           FAQ

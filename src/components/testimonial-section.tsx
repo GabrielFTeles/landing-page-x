@@ -10,7 +10,7 @@ export const TestimonialCard: React.FC<TestimonialCardProps> = ({
   highlight,
 }) => {
   return (
-    <div className="rounded-2xl p-6 bg-muted shadow-sm border flex flex-col gap-4 h-full">
+    <div className="rounded-2xl p-6 bg-background shadow-sm border flex flex-col gap-4 h-full">
       <div className="flex gap-1 text-yellow-400">
         <Star className="fill-yellow-400" />
         <Star className="fill-yellow-400" />
@@ -27,9 +27,7 @@ export const TestimonialCard: React.FC<TestimonialCardProps> = ({
       <div className="items-end flex flex-1 gap-2">
         <Avatar>
           <AvatarImage src={author.image.src} alt={author.image.alt} />
-          <AvatarFallback className="bg-background">
-            {author.name.slice(0, 1)}
-          </AvatarFallback>
+          <AvatarFallback>{author.name.slice(0, 1)}</AvatarFallback>
         </Avatar>
 
         <div>
@@ -45,7 +43,7 @@ export const TestimonialCard: React.FC<TestimonialCardProps> = ({
 
 export const TestimonialSection = () => {
   return (
-    <section className="py-16">
+    <section className="py-16 bg-[#F5F9FC]">
       <div className="flex flex-col items-center max-w-[500px] mx-auto text-center">
         <h3 className="font-mono uppercase tracking-tighter text-sm text-blue-800">
           Depoimentos

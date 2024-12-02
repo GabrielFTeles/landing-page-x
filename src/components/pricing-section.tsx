@@ -55,8 +55,8 @@ const plans: Array<Plan> = [
       annual: 9599.99,
     },
     features: [
-      "3 CNPJs",
       "10 usuários",
+      "3 CNPJs",
       "Até 20.000 notas/mês",
       "Suporte prioritário 24/7, via chat, e-mail e telefone",
     ],
