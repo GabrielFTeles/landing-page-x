@@ -3,6 +3,7 @@ import { Navigation } from "./navigation";
 import { Button } from "./ui/button";
 import { motion, useMotionValueEvent, useScroll } from "motion/react";
 import { cva } from "class-variance-authority";
+import { ModeToggle } from "./theme-toggle";
 
 const headerVariants = cva(
   "sticky top-0 px-2 py-4 bg-background dark:backdrop-blur dark:supports-[backdrop-filter]:bg-background/80 border-b transition-colors z-50",
@@ -37,6 +38,8 @@ export const Header = () => {
         <Navigation />
 
         <div className="lg:flex gap-2 hidden">
+          <ModeToggle />
+
           <Button variant="ghost">Entrar</Button>
           <Button>Começar grátis</Button>
         </div>
