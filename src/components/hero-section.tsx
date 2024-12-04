@@ -2,12 +2,15 @@ import { Button } from "./ui/button";
 
 import heroImage from "../assets/hero-image.png";
 import { Brain, ChartPie, Zap } from "lucide-react";
+import DotPattern from "./ui/dot-pattern";
 
 export const HeroSection = () => {
   return (
-    <section className="max-w-screen-2xl mx-auto pt-20 pb-10 px-8">
+    <section className="max-w-screen-2xl relative mx-auto pt-20 pb-10 px-8">
+      <DotPattern className="-z-10 opacity-80 [mask-image:radial-gradient(700px_circle_at_center,white,transparent)]" />
+
       <div className="max-w-[800px] mx-auto">
-        <h1 className="text-6xl text-center font-bold">
+        <h1 className="hero-title text-center">
           Análise empresarial com{" "}
           <span className="bg-gradient-to-r from-blue-600 to-violet-600 bg-clip-text text-transparent">
             IA
@@ -26,21 +29,23 @@ export const HeroSection = () => {
         </p>
       </div>
 
-      <div className="mt-8 flex justify-center items-center gap-4">
-        <Button variant="outline" size="lg">
+      <div className="mt-8 flex-col sm:flex-row flex justify-center items-center gap-4">
+        <Button variant="outline" size="lg" className="w-full sm:w-fit">
           Agendar demonstração
         </Button>
-        <Button size="lg">Experimente gratuitamente por 14 dias</Button>
+        <Button size="lg" className="w-full sm:w-fit">
+          Experimente gratuitamente por 14 dias
+        </Button>
       </div>
 
-      <div className="mt-16 flex flex-col justify-center items-center gap-4">
-        <div className="mx-auto max-w-screen-xl border p-4 rounded-xl">
+      <div className="pt-16 flex flex-col justify-center items-center gap-4">
+        <div className="mx-auto bg-background max-w-screen-xl border p-4 rounded-xl">
           <img src={heroImage} alt="Hero" />
         </div>
       </div>
 
-      <div className="mt-12 flex justify-between gap-2 max-w-screen-xl mx-auto">
-        <div className="flex gap-2 max-w-[350px]">
+      <div className="mt-12 flex items-center gap-8 lg:flex-row flex-col justify-between lg:gap-2 max-w-screen-xl mx-auto">
+        <div className="flex gap-2 lg:max-w-[350px]">
           <div className="p-4 bg-blue-500/80 rounded-lg h-fit">
             <Brain className="text-white size-8" />
           </div>
@@ -55,7 +60,7 @@ export const HeroSection = () => {
           </div>
         </div>
 
-        <div className="flex gap-2 max-w-[350px]">
+        <div className="flex gap-2 lg:max-w-[350px]">
           <div className="p-4 bg-emerald-500/80 rounded-lg h-fit">
             <Zap className="text-white size-8" />
           </div>
@@ -69,7 +74,7 @@ export const HeroSection = () => {
             </p>
           </div>
         </div>
-        <div className="flex gap-2 max-w-[350px]">
+        <div className="flex gap-2 lg:max-w-[350px]">
           <div className="p-4 bg-purple-500/80 rounded-lg h-fit">
             <ChartPie className="text-white size-8" />
           </div>

@@ -56,7 +56,7 @@ export const ComparisonChart = () => {
   return (
     <ChartContainer
       config={chartConfig}
-      className="h-[500px] w-full aspect-auto"
+      className="h-[250px] md:h-[500px] w-full aspect-auto"
     >
       <BarChart data={chartData}>
         <CartesianGrid vertical={false} />

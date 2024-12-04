@@ -10,7 +10,7 @@ export const TestimonialCard: React.FC<TestimonialCardProps> = ({
   highlight,
 }) => {
   return (
-    <div className="rounded-2xl p-6 bg-background shadow-sm border flex flex-col gap-4 h-full">
+    <div className="rounded-2xl p-6 bg-background dark:bg-secondary shadow-sm border flex flex-col gap-4 h-full">
       <div className="flex gap-1 text-yellow-400">
         <Star className="fill-yellow-400" />
         <Star className="fill-yellow-400" />
@@ -44,7 +44,7 @@ export const TestimonialCard: React.FC<TestimonialCardProps> = ({
 export const TestimonialSection = () => {
   return (
     <section
-      className="pt-16 pb-48 bg-[#F5F9FC]"
+      className="pt-16 dark:pb-28 pb-48 bg-[#F5F9FC] dark:bg-background"
       style={{
         clipPath: "polygon(0 0, 100% 0, 100% 90%, 0 100%)",
       }}
@@ -54,7 +54,7 @@ export const TestimonialSection = () => {
           Depoimentos
         </h3>
 
-        <h2 className="text-5xl font-bold">
+        <h2 className="section-title">
           Amados por equipes de todos os tamanhos
         </h2>
 

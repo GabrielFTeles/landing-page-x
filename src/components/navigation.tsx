@@ -21,7 +21,7 @@ const NavigationItem = ({ href, label }: NavigationItem) => (
 export const Navigation = () => {
   return (
     <nav>
-      <ul className="flex gap-8">
+      <ul className="hidden lg:flex gap-8">
         {navLinks.map((link) => (
           <NavigationItem key={link.href} {...link} />
         ))}

@@ -59,7 +59,10 @@ interface FaqItemProps extends FaqItemType {
 
 const FaqItem: React.FC<FaqItemProps> = ({ value, question, answer }) => {
   return (
-    <AccordionItem value={value} className="shadow-sm">
+    <AccordionItem
+      value={value}
+      className="shadow-sm dark:data-[state=open]:bg-[#1F1A1C]"
+    >
       <AccordionTrigger>{question}</AccordionTrigger>
       <AccordionContent>{answer}</AccordionContent>
     </AccordionItem>
@@ -68,15 +71,13 @@ const FaqItem: React.FC<FaqItemProps> = ({ value, question, answer }) => {
 
 export const FaqSection = () => {
   return (
-    <section className="pb-28 bg-muted pt-14 mx-auto px-4">
+    <section className="pb-28 bg-secondary dark:bg-background pt-14 mx-auto px-4">
       <div className="max-w-screen-md mx-auto flex flex-col items-center">
         <h3 className="font-mono uppercase tracking-tight text-sm text-blue-800">
           FAQ
         </h3>
 
-        <h2 className="text-5xl font-bold text-center mt-4">
-          Perguntas frequentes
-        </h2>
+        <h2 className="section-title text-center mt-4">Perguntas frequentes</h2>
 
         <Accordion type="single" collapsible className="w-full mt-10 space-y-2">
           {faqItems.map((item, index) => (

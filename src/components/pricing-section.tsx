@@ -125,7 +125,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
         {description}
       </p>
 
-      <h4 className={cn("mt-8 text-gray-800", popular && "text-white")}>
+      <h4 className={cn("mt-8 text-primary/80", popular && "text-white")}>
         <span
           className={cn(
             "text-4xl text-primary font-bold",
@@ -178,7 +178,7 @@ const TogglePeriodButton: React.FC<TogglePeriodButtonProps> = ({
         onClick={() => setPeriod("monthly")}
         className="relative p-2 px-3 rounded-full group font-medium"
       >
-        <span className="relative z-10 group-data-[active=true]:text-white transition-colors">
+        <span className="relative z-10 group-data-[active=true]:text-white dark:group-data-[active=true]:text-black transition-colors">
           Mensal
         </span>
 
@@ -198,7 +198,7 @@ const TogglePeriodButton: React.FC<TogglePeriodButtonProps> = ({
         onClick={() => setPeriod("annual")}
         className="relative p-2 rounded-full group flex gap-2 items-center font-medium"
       >
-        <span className="relative z-10 group-data-[active=true]:text-white transition-colors">
+        <span className="relative z-10 group-data-[active=true]:text-white dark:group-data-[active=true]:text-black transition-colors">
           Anual
         </span>
         <span className="relative z-10 inline-block rounded-full text-emerald-600 font-medium text-sm">
@@ -223,13 +223,13 @@ export const PricingSection = () => {
   const [period, setPeriod] = useState<"monthly" | "annual">("monthly");
 
   return (
-    <section className="py-20 space-y-14 max-w-screen-2xl mx-auto px-4">
+    <section className="py-20 dark:pt-10 dark:pb-20 space-y-14 max-w-screen-2xl mx-auto px-4">
       <div className="flex flex-col items-center">
         <h3 className="font-mono uppercase tracking-tighter text-sm text-blue-800">
           Vá para o próximo nível
         </h3>
 
-        <h2 className="text-6xl pt-6 font-bold">Preços & Planos</h2>
+        <h2 className="section-title pt-6">Preços & Planos</h2>
 
         <p className="pt-4 max-w-[500px] text-center text-muted-foreground">
           Economize milhares em ferramentas complexas de BI. Nossa IA faz o
@@ -239,7 +239,7 @@ export const PricingSection = () => {
 
       <TogglePeriodButton period={period} setPeriod={setPeriod} />
 
-      <div className="grid grid-cols-1 gap-8 mt-20 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="grid grid-cols-1 gap-8 mt-20 sm:grid-cols-2 xl:grid-cols-4">
         {plans.map((plan) => (
           <PricingCard
             key={plan.title}

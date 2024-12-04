@@ -207,7 +207,7 @@ export const TestimonialCarousel = () => {
         <div ref={firstRowRef} className="overflow-hidden">
           <div className="flex -ml-4">
             {testimonials.map((testimonial) => (
-              <div className="flex-[0_0_33%] min-w-0 pl-4">
+              <div className="flex-[0_0_90%] md:flex-[0_0_50%] xl:flex-[0_0_33%] min-w-0 pl-4">
                 <TestimonialCard
                   key={testimonial.author.name}
                   {...testimonial}
@@ -220,7 +220,7 @@ export const TestimonialCarousel = () => {
         <div ref={secondRowRef} className="overflow-hidden">
           <div className="flex -ml-4">
             {testimonials.map((testimonial) => (
-              <div className="flex-[0_0_33%] min-w-0 pl-4">
+              <div className="flex-[0_0_90%] md:flex-[0_0_50%] xl:flex-[0_0_33%] min-w-0 pl-4">
                 <TestimonialCard
                   key={testimonial.author.name}
                   {...testimonial}

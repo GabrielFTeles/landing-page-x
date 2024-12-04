@@ -14,7 +14,7 @@ export const Footer = () => {
   return (
     <footer className="bg-[#1F1A1C] text-gray-300">
       <div>
-        <div className="max-w-screen-2xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="max-w-screen-2xl mx-auto px-4 py-12 grid grid-cols-1 lg:grid-cols-4 gap-8">
           <div className="space-y-4">
             <h3 className="text-white text-lg font-bold mb-4">Sentry-X</h3>
             <p className="text-sm">
@@ -115,11 +115,10 @@ export const Footer = () => {
           <div className="px-4 py-6 flex justify-between items-center gap-2">
             <p>&copy; {currentYear} Sentry-X. Todos os direitos reservados.</p>
 
-            <div>
+            <div className="flex flex-col md:flex-row gap-2">
               <a href="#" className="hover:text-white transition-colors">
                 Termos de Serviço
               </a>
-              <span className="mx-2">|</span>
               <a href="#" className="hover:text-white transition-colors">
                 Política de Privacidade
               </a>

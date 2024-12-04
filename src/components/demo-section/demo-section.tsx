@@ -3,7 +3,7 @@ import { ComparisonChart } from "./comparison-chart";
 export const DemoSection = () => {
   return (
     <section
-      className="px-4 pt-16 pb-60 bg-[#0B2540]"
+      className="px-4 pt-16 pb-60 bg-[#0B2540] dark:bg-gradient-to-r to-[#165598] from-[#003976]"
       style={{
         clipPath: "polygon(0 0, 100% 0, 100% 85%, 0 100%)",
       }}
@@ -14,7 +14,7 @@ export const DemoSection = () => {
             Simples & Fácil
           </h3>
 
-          <h2 className="text-5xl font-bold text-white mt-2">
+          <h2 className="section-title text-white mt-2">
             Multiplique seus{" "}
             <span className="bg-gradient-to-r from-blue-400 to-violet-400 bg-clip-text text-transparent">
               Insights

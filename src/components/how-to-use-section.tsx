@@ -46,23 +46,19 @@ const HowToUseTabs = () => {
   const [activeTab, setActiveTab] = useState(howToUseSteps[0]);
 
   return (
-    <div className="flex gap-6">
-      <div className="p-3 border bg-background shadow-sm rounded-2xl w-1/2 h-fit mt-auto">
+    <div className="flex gap-6 xl:flex-row max-w-screen-md xl:max-w-full mx-auto flex-col  xl:col-span-2 items-center">
+      <div className="p-3 border bg-background shadow-sm rounded-2xl w-fit xl:w-1/2 h-fit mt-auto">
         <img src={activeTab.image} alt="" className="rounded-xl" />
       </div>
 
-      <div className="w-1/2">
-        <h2 className="text-5xl font-bold mb-8">
-          Inicie sua análise de dados em 4 passos simples.
-        </h2>
-
+      <div className="xl:w-1/2">
         <ul className="flex flex-col gap-2">
           {howToUseSteps.map((step) => (
             <li className="relative flex gap-2" key={step.value}>
               {activeTab === step && (
                 <motion.div
                   layoutId="active-how-to-use-tab"
-                  className="min-w-1 flex-1 rounded-xl bg-indigo-600"
+                  className="min-w-1 max-w-1 flex-1 rounded-xl bg-indigo-600"
                 ></motion.div>
               )}
 
@@ -70,7 +66,7 @@ const HowToUseTabs = () => {
                 onClick={() => setActiveTab(step)}
                 layout
                 data-state={activeTab === step ? "active" : "inactive"}
-                className="p-4 bg-background data-[state=active]:bg-indigo-300/40 text-start rounded-lg border shadow-sm cursor-pointer select-none"
+                className="p-4 w-full bg-background data-[state=active]:bg-indigo-300/40 dark:data-[state=active]:bg-blue-900 text-start rounded-lg border shadow-sm cursor-pointer select-none"
               >
                 <h3 className="text-lg font-bold">{step.title}</h3>
                 <p className="text-muted-foreground">{step.description}</p>
@@ -93,7 +89,11 @@ export const HowToUseSection = () => {
           </h3>
         </div>
 
-        <div>
+        <div className="grid grid-cols-1 gap-x-6 xl:grid-cols-2">
+          <h2 className="max-w-[600px] mx-auto xl:mx-0 section-title mb-8 xl:text-start text-center xl:col-start-2">
+            Inicie sua análise de dados em 4 passos simples.
+          </h2>
+
           <HowToUseTabs />
         </div>
       </div>
