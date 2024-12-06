@@ -15,7 +15,7 @@ const howToUseSteps: Array<HowToUseStep> = [
   {
     title: "Upload dos seus dados",
     description:
-      "Faça o upload dos seus arquivos CSV, Excel ou conecte suas ferramentas de gestão. Seus dados são criptografados e protegidos com os mais altos padrões de segurança.",
+      "Faça o upload dos seus arquivos através da nossa plataforma. Seus dados são criptografados e protegidos com os mais altos padrões de segurança.",
     image: uploadArchiveImage,
     value: "upload",
   },

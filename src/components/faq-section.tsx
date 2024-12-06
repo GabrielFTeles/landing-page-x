@@ -34,22 +34,22 @@ const faqItems: Array<FaqItemType> = [
   {
     question: "Posso começar gratuitamente?",
     answer:
-      "Sim! Oferecemos um período de teste gratuito de 14 dias com acesso a todos os recursos da plataforma. Você pode experimentar todas as funcionalidades sem compromisso e escolher o plano ideal após o período de teste.",
+      "Sim! Oferecemos um período de teste gratuito de 14 dias com acesso a nossa plataforma. Você pode experimentar funcionalidades sem compromisso e escolher o plano ideal após o período de teste.",
   },
   {
     question: "Quanto tempo leva para começar a usar?",
     answer:
-      "Você pode começar a usar a plataforma imediatamente após o cadastro. Para fontes de dados simples como planilhas, o processo leva minutos. Para integrações mais complexas, nossa equipe oferece suporte dedicado para garantir uma implementação rápida e eficiente.",
+      "Você pode começar a usar a plataforma imediatamente após o cadastro, basta escolher o seu plano, colocar seus dados e já estará utilizando nossa IA. P processo leva minutos. Para integrações mais complexas, nossa equipe oferece suporte dedicado para garantir uma implementação rápida e eficiente.",
   },
   {
-    question: "Há limite de usuários ou consultas?",
+    question: "Há limite de usuários, notas ou CNPJs?",
     answer:
-      "Cada plano tem seus próprios limites. O plano Starter começa com 3 usuários e 1000 consultas/mês, o Pro oferece usuários ilimitados e 5000 consultas/mês, e para necessidades maiores, temos planos Enterprise personalizados.",
+      "Cada plano tem seus próprios limites. O plano Básico começa com 3 usuários, 10.000 notas/mês e 1 CNPJ. O Profissional oferece 10 usuários, 20.000 notas/mês e 3 CNPJs, e para necessidades maiores, temos planos Empresarial personalizados.",
   },
   {
     question: "Que tipo de suporte está incluído?",
     answer:
-      "Todos os planos incluem suporte por email e documentação completa. Planos Pro e Enterprise também têm acesso a suporte prioritário por chat em tempo real e gerente de conta dedicado.",
+      "Todos os planos incluem suporte por email e documentação completa. Planos Profissional e Empresarial também têm acesso a suporte prioritário por chat em tempo real, telefone e gerente de conta dedicado.",
   },
 ];
 

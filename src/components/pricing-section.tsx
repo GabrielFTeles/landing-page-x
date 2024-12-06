@@ -59,6 +59,7 @@ const plans: Array<Plan> = [
       "3 CNPJs",
       "Até 20.000 notas/mês",
       "Suporte prioritário 24/7, via chat, e-mail e telefone",
+      "Gerente de conta",
     ],
   },
   {
@@ -72,6 +73,7 @@ const plans: Array<Plan> = [
     features: [
       "Totalmente personalizado de acordo com a necessidade da empresa.",
       "Suporte prioritário 24/7, via chat, e-mail e telefone",
+      "Gerente de conta",
     ],
   },
 ];
