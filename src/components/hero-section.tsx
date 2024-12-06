@@ -83,8 +83,8 @@ export const HeroSection = () => {
             <h3 className="text-xl font-bold">Análise Avançada</h3>
 
             <p className="text-muted-foreground">
-              Transforme perguntas simples em análises poderosas com nossa IA
-              que entende seu negócio.
+              Mergulhe fundo nos seus dados com ferramentas sofisticadas de
+              análise e visualização.
             </p>
           </div>
         </div>

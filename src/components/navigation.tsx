@@ -3,9 +3,9 @@ interface NavigationItem {
   label: string;
 }
 
-const navLinks: Array<NavigationItem> = [
+export const navLinks: Array<NavigationItem> = [
   { href: "/", label: "Início" },
-  { href: "/planos", label: "Preços" },
+  { href: "#pricing", label: "Preços" },
   { href: "/sobre", label: "Sobre" },
   { href: "/contato", label: "Contato" },
 ];

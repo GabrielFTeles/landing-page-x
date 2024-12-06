@@ -223,7 +223,10 @@ export const PricingSection = () => {
   const [period, setPeriod] = useState<"monthly" | "annual">("monthly");
 
   return (
-    <section className="py-20 dark:pt-10 dark:pb-20 space-y-14 max-w-screen-2xl mx-auto px-4">
+    <section
+      id="pricing"
+      className="scroll-mt-16 py-20 dark:pt-10 dark:pb-20 space-y-14 max-w-screen-2xl mx-auto px-4"
+    >
       <div className="flex flex-col items-center">
         <h3 className="font-mono uppercase tracking-tighter text-sm text-blue-800">
           Vá para o próximo nível
