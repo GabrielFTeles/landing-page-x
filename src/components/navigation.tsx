@@ -1,8 +1,11 @@
+import { Link } from "react-router";
+
 interface NavigationItem {
   href: string;
   label: string;
 }
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const navLinks: Array<NavigationItem> = [
   { href: "/", label: "Início" },
   { href: "#pricing", label: "Preços" },
@@ -12,9 +15,9 @@ export const navLinks: Array<NavigationItem> = [
 
 const NavigationItem = ({ href, label }: NavigationItem) => (
   <li>
-    <a className="opacity-70 hover:opacity-100 transition-opacity" href={href}>
+    <Link className="opacity-70 hover:opacity-100 transition-opacity" to={href}>
       {label}
-    </a>
+    </Link>
   </li>
 );
 

@@ -1,33 +1,20 @@
-import { CallToActionSection } from "./components/call-to-action-section";
-import { DemoSection } from "./components/demo-section/demo-section";
-import { FaqSection } from "./components/faq-section";
-import { Footer } from "./components/footer";
-import { Header } from "./components/header";
-import { HeroSection } from "./components/hero-section";
-import { HowToUseSection } from "./components/how-to-use-section";
-import { NotificationBanner } from "./components/notification-banner";
-import { PricingSection } from "./components/pricing-section";
-import { TestimonialSection } from "./components/testimonial-section";
 import { ThemeProvider } from "@/components/theme-provider";
+import { BrowserRouter, Route, Routes } from "react-router";
+import { Home } from "./pages/home";
+import { DefaultLayout } from "./layouts/default-layout";
+import { Contact } from "./pages/contact";
 
 export function App() {
   return (
     <ThemeProvider defaultTheme="dark" storageKey="sentry-x-lp-theme">
-      <div>
-        <NotificationBanner />
-        <Header />
-
-        <main className="relative">
-          <HeroSection />
-          <DemoSection />
-          <HowToUseSection />
-          <TestimonialSection />
-          <PricingSection />
-          <FaqSection />
-          <CallToActionSection />
-          <Footer />
-        </main>
-      </div>
+      <BrowserRouter>
+        <Routes>
+          <Route element={<DefaultLayout />}>
+            <Route path="/" element={<Home />} />
+            <Route path="/contato" element={<Contact />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </ThemeProvider>
   );
 }

@@ -29,7 +29,6 @@ export const Footer = () => {
             </div>
           </div>
 
-          {/* Quick Links */}
           <div>
             <h4 className="text-white text-lg font-semibold mb-4">
               Links Rápidos
@@ -63,7 +62,6 @@ export const Footer = () => {
             </ul>
           </div>
 
-          {/* Resources */}
           <div>
             <h4 className="text-white text-lg font-semibold mb-4">Recursos</h4>
             <ul className="space-y-2">
@@ -90,7 +88,6 @@ export const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact Info */}
           <div>
             <h4 className="text-white text-lg font-semibold mb-4">Contato</h4>
             <div className="space-y-4">
@@ -100,7 +97,7 @@ export const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5" />
-                <span>+55 (37) 9999-9999</span>
+                <span>+55 (61) 9868-0610</span>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="w-5 h-5" />
@@ -110,7 +107,6 @@ export const Footer = () => {
           </div>
         </div>
 
-        {/* Bottom Bar */}
         <div className="border-t border-gray-700 max-w-screen-2xl mx-auto">
           <div className="px-4 py-6 flex justify-between items-center gap-2">
             <p>&copy; {currentYear} Sentry-X. Todos os direitos reservados.</p>
