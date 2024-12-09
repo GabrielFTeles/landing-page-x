@@ -64,8 +64,8 @@ export const Contact = () => {
           />
 
           <ContactCard
-            title="Entre em contato pelo E-mail"
-            description="contato@sentryx.com.br"
+            title="Ou ligue para nós"
+            description="Agende uma ligação"
             href="https://wa.me/556198680610?text=Ol%C3%A1!%20Entrei%20em%20contato%20atrav%C3%A9s%20do%20site%20da%20sentry-x,%20gostaria%20de%20agendar%20uma%20liga%C3%A7%C3%A3o,%20poderiamos%20conversar."
             icon={PhoneOutgoing}
           />
