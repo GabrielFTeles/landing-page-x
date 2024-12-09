@@ -14,7 +14,7 @@ const faqItems: Array<FaqItemType> = [
   {
     question: "Como a IA entende minhas perguntas sobre os dados?",
     answer:
-      "Nossa IA é treinada para compreender linguagem natural e contexto empresarial. Você pode fazer perguntas como faria a um analista, por exemplo: 'Qual foi o faturamento do último trimestre?' ou 'Compare as vendas deste ano com o ano passado'. A IA processa sua pergunta, identifica os dados relevantes e gera visualizações e insights apropriados.",
+      "Nossa IA é treinada para compreender desde pessoas leigas, até analistas profissionais. Você pode fazer perguntas como faria a um analista, por exemplo: 'Qual foi o faturamento do último trimestre?' ou 'Compare as vendas deste ano com o ano passado'. A IA processa sua pergunta, identifica os dados relevantes e gera visualizações e insights apropriados.",
   },
   {
     question: "Preciso ter conhecimento técnico para usar a plataforma?",
@@ -29,7 +29,7 @@ const faqItems: Array<FaqItemType> = [
   {
     question: "Meus dados estão seguros na plataforma?",
     answer:
-      "Sim! Segurança é nossa prioridade. Utilizamos criptografia de ponta a ponta, seguimos as melhores práticas de segurança da indústria, e somos compatíveis com LGPD e GDPR. Seus dados nunca são compartilhados ou utilizados para outros fins.",
+      "Sim! Segurança é nossa prioridade. Utilizamos criptografia, seguimos as melhores práticas de segurança, e somos compatíveis com LGPD e GDPR. Seus dados nunca são compartilhados ou utilizados para outros fins.",
   },
   {
     question: "Posso começar gratuitamente?",
@@ -39,7 +39,7 @@ const faqItems: Array<FaqItemType> = [
   {
     question: "Quanto tempo leva para começar a usar?",
     answer:
-      "Você pode começar a usar a plataforma imediatamente após o cadastro, basta escolher o seu plano, colocar seus dados e já estará utilizando nossa IA. P processo leva minutos. Para integrações mais complexas, nossa equipe oferece suporte dedicado para garantir uma implementação rápida e eficiente.",
+      "Você pode começar a usar a plataforma imediatamente após o cadastro, basta escolher o seu plano, colocar seus dados e já estará utilizando nossa IA. O processo leva minutos. Para integrações mais complexas, nossa equipe oferece suporte dedicado para garantir uma implementação rápida e eficiente.",
   },
   {
     question: "Há limite de usuários, notas ou CNPJs?",

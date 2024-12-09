@@ -9,16 +9,33 @@ import {
   SheetTrigger,
 } from "./ui/sheet";
 import { navLinks } from "./navigation";
+import { Link } from "react-router";
+import { useState } from "react";
 
 interface MobileMenuProps {
   className: string;
 }
 
 export const MobileMenu: React.FC<MobileMenuProps> = ({ className }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const openMenu = () => {
+    setIsOpen(true);
+  };
+
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
   return (
-    <Sheet>
+    <Sheet open={isOpen} onOpenChange={setIsOpen}>
       <SheetTrigger asChild>
-        <Button size="icon" variant="outline" className={className}>
+        <Button
+          onClick={openMenu}
+          size="icon"
+          variant="outline"
+          className={className}
+        >
           <Menu />
         </Button>
       </SheetTrigger>
@@ -35,9 +52,9 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({ className }) => {
           <ul className="flex flex-col gap-3">
             {navLinks.map((link) => (
               <li>
-                <a href={link.href}>
+                <Link onClick={closeMenu} to={link.href}>
                   <Button className="w-full rounded-sm">{link.label}</Button>
-                </a>
+                </Link>
               </li>
             ))}
           </ul>

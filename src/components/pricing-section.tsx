@@ -37,7 +37,7 @@ const plans: Array<Plan> = [
     description: "Para pequenas empresas e startups.",
     prices: {
       monthly: 399.99,
-      annual: 3839.99,
+      annual: 4319.99,
     },
     features: [
       "3 usuários",
@@ -52,7 +52,7 @@ const plans: Array<Plan> = [
     description: "Para empresas em crescimento.",
     prices: {
       monthly: 999.99,
-      annual: 9599.99,
+      annual: 10799.99,
     },
     features: [
       "10 usuários",
@@ -153,7 +153,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
       <div className="flex-1 flex items-end">
         <Button
           className={cn(
-            "mt-8 rounded-lg w-full p-4 hover:ring-offset-2 hover:ring-blue-500 bg-blue-500 hover:bg-blue-500 hover:ring-2 transition-all duration-200",
+            "mt-8 rounded-lg w-full p-4 hover:ring-offset-2 hover:ring-blue-500 dark:bg-blue-400 bg-blue-500 hover:bg-blue-500 hover:ring-2 transition-all duration-200",
             popular && "ring-offset-[#1F1A1C]"
           )}
         >
@@ -204,7 +204,7 @@ const TogglePeriodButton: React.FC<TogglePeriodButtonProps> = ({
           Anual
         </span>
         <span className="relative z-10 inline-block rounded-full text-emerald-600 font-medium text-sm">
-          20% OFF
+          10% OFF
         </span>
 
         {period === "annual" && (

@@ -8,8 +8,8 @@ interface NavigationItem {
 // eslint-disable-next-line react-refresh/only-export-components
 export const navLinks: Array<NavigationItem> = [
   { href: "/", label: "Início" },
-  { href: "#pricing", label: "Preços" },
-  { href: "/sobre", label: "Sobre" },
+  { href: "/", label: "Preços" },
+  { href: "/", label: "Sobre" },
   { href: "/contato", label: "Contato" },
 ];
 

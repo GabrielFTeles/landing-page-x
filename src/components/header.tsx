@@ -5,6 +5,7 @@ import { motion, useMotionValueEvent, useScroll } from "motion/react";
 import { cva } from "class-variance-authority";
 import { ModeToggle } from "./theme-toggle";
 import { MobileMenu } from "./mobile-menu";
+import { Link } from "react-router";
 
 const headerVariants = cva(
   "sticky top-0 px-2 py-4 bg-background dark:backdrop-blur dark:supports-[backdrop-filter]:bg-background/80 border-b transition-colors z-50",
@@ -34,9 +35,9 @@ export const Header = () => {
   return (
     <motion.header className={headerVariants({ scrolled: hasScrolled })}>
       <div className="flex gap-4 justify-between items-center max-w-screen-2xl mx-auto px-8 xl:px-4">
-        <a href="#">
+        <Link to="/">
           <h1 className="font-bold text-xl">🧠 Sentry-X</h1>
-        </a>
+        </Link>
 
         <Navigation />
 
