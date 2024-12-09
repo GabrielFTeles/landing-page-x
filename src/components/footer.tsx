@@ -7,6 +7,7 @@ import {
   Linkedin,
   Instagram,
 } from "lucide-react";
+import { Link } from "react-router";
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -112,12 +113,18 @@ export const Footer = () => {
             <p>&copy; {currentYear} Sentry-X. Todos os direitos reservados.</p>
 
             <div className="flex flex-col md:flex-row gap-2">
-              <a href="#" className="hover:text-white transition-colors">
-                Termos de Serviço
-              </a>
-              <a href="#" className="hover:text-white transition-colors">
+              <Link
+                to="/termos-de-uso"
+                className="hover:text-white transition-colors"
+              >
+                Termos de Uso
+              </Link>
+              <Link
+                to="/politica-de-privacidade"
+                className="hover:text-white transition-colors"
+              >
                 Política de Privacidade
-              </a>
+              </Link>
             </div>
           </div>
         </div>
