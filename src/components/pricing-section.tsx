@@ -20,7 +20,7 @@ interface Plan {
 const plans: Array<Plan> = [
   {
     title: "Plano Gratuito",
-    description: "Testes com nossas ferramentas.",
+    description: "Testes com nossas ferramentas por 7 dias.",
     prices: {
       monthly: 0,
       annual: 0,
@@ -227,7 +227,7 @@ export const PricingSection = () => {
   return (
     <section
       id="pricing"
-      className="scroll-mt-16 py-20 dark:pt-10 dark:pb-20 space-y-14 max-w-screen-2xl mx-auto px-4"
+      className="scroll-mt-10 py-20 dark:pt-10 dark:pb-20 space-y-14 max-w-screen-2xl mx-auto px-4"
     >
       <div className="flex flex-col items-center">
         <h3 className="font-mono uppercase tracking-tighter text-sm text-blue-800">

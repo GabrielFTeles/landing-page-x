@@ -52,9 +52,15 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({ className }) => {
           <ul className="flex flex-col gap-3">
             {navLinks.map((link) => (
               <li>
-                <Link onClick={closeMenu} to={link.href}>
-                  <Button className="w-full rounded-sm">{link.label}</Button>
-                </Link>
+                {link.useReactRouter ? (
+                  <Link onClick={closeMenu} to={link.href}>
+                    <Button className="w-full rounded-sm">{link.label}</Button>
+                  </Link>
+                ) : (
+                  <a onClick={closeMenu} href={link.href}>
+                    <Button className="w-full rounded-sm">{link.label}</Button>
+                  </a>
+                )}
               </li>
             ))}
           </ul>
