@@ -10,6 +10,7 @@ interface Plan {
   custom?: boolean;
   title: string;
   description: string;
+  href: string;
   prices?: {
     monthly: number;
     annual: number;
@@ -21,6 +22,7 @@ const plans: Array<Plan> = [
   {
     title: "Plano Gratuito",
     description: "Testes com nossas ferramentas por 7 dias.",
+    href: "/",
     prices: {
       monthly: 0,
       annual: 0,
@@ -35,6 +37,7 @@ const plans: Array<Plan> = [
   {
     title: "Plano Básico",
     description: "Para pequenas empresas e startups.",
+    href: "http://localhost:3000/auth/cadastrar?plano=basico",
     prices: {
       monthly: 399.99,
       annual: 4319.99,
@@ -50,6 +53,7 @@ const plans: Array<Plan> = [
     popular: true,
     title: "Plano Profissional",
     description: "Para empresas em crescimento.",
+    href: "/",
     prices: {
       monthly: 999.99,
       annual: 10799.99,
@@ -65,6 +69,7 @@ const plans: Array<Plan> = [
   {
     title: "Plano Empresarial",
     description: "Para grandes empresas e corporações.",
+    href: "/",
     custom: true,
     prices: {
       monthly: 0,
@@ -90,6 +95,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
   description,
   prices,
   features,
+  href,
 }) => {
   const activePrice = custom
     ? "CONSULTAR"
@@ -151,14 +157,16 @@ const PricingCard: React.FC<PricingCardProps> = ({
       </ul>
 
       <div className="flex-1 flex items-end">
-        <Button
-          className={cn(
-            "mt-8 rounded-lg w-full p-4 hover:ring-offset-2 hover:ring-blue-500 dark:bg-blue-400 bg-blue-500 hover:bg-blue-500 hover:ring-2 transition-all duration-200",
-            popular && "ring-offset-[#1F1A1C]"
-          )}
-        >
-          {custom ? "Agendar consulta" : "Escolher plano"}
-        </Button>
+        <a href={href} className="w-full">
+          <Button
+            className={cn(
+              "mt-8 rounded-lg w-full p-4 hover:ring-offset-2 hover:ring-blue-500 dark:bg-blue-400 bg-blue-500 hover:bg-blue-500 hover:ring-2 transition-all duration-200",
+              popular && "ring-offset-[#1F1A1C]"
+            )}
+          >
+            {custom ? "Agendar consulta" : "Escolher plano"}
+          </Button>
+        </a>
       </div>
     </div>
   );
@@ -246,16 +254,7 @@ export const PricingSection = () => {
 
       <div className="grid grid-cols-1 gap-8 mt-20 sm:grid-cols-2 xl:grid-cols-4">
         {plans.map((plan) => (
-          <PricingCard
-            key={plan.title}
-            period={period}
-            popular={plan.popular}
-            custom={plan.custom}
-            title={plan.title}
-            description={plan.description}
-            prices={plan.prices}
-            features={plan.features}
-          />
+          <PricingCard key={plan.title} period={period} {...plan} />
         ))}
       </div>
     </section>

@@ -3,38 +3,21 @@ import { Link } from "react-router";
 interface NavigationItem {
   href: string;
   label: string;
-  useReactRouter: boolean;
 }
 
 // eslint-disable-next-line react-refresh/only-export-components
 export const navLinks: Array<NavigationItem> = [
-  { href: "/", label: "Início", useReactRouter: true },
-  { href: "#pricing", label: "Preços", useReactRouter: false },
-  { href: "/", label: "Sobre", useReactRouter: true },
-  { href: "/contato", label: "Contato", useReactRouter: true },
+  { href: "/", label: "Início" },
+  { href: "/planos", label: "Preços" },
+  { href: "/", label: "Sobre" },
+  { href: "/contato", label: "Contato" },
 ];
 
-const NavigationItem = ({
-  href,
-  label,
-  useReactRouter = true,
-}: NavigationItem) => (
+const NavigationItem = ({ href, label }: NavigationItem) => (
   <li>
-    {useReactRouter ? (
-      <Link
-        className="opacity-70 hover:opacity-100 transition-opacity"
-        to={href}
-      >
-        {label}
-      </Link>
-    ) : (
-      <a
-        className="opacity-70 hover:opacity-100 transition-opacity"
-        href={href}
-      >
-        {label}
-      </a>
-    )}
+    <Link className="opacity-70 hover:opacity-100 transition-opacity" to={href}>
+      {label}
+    </Link>
   </li>
 );
 
