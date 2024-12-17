@@ -20,13 +20,14 @@ export const PrivacyPolicy = () => {
 
       <section className="space-y-4">
         <p className="text-lg leading-relaxed">
-          A SENTRY-X TECHNOLOGY LTDA., inscrita no CNPJ/MF sob o nº [CNPJ AQUI],
-          com sede em [ENDEREÇO AQUI], única e exclusiva proprietária das marcas
-          e dos domínios associados ao Site e ao Aplicativo doravante, em
-          conjunto, denominados simplesmente "SENTRY-X", com o objetivo de
-          fornecer aos Usuários uma visão transparente das práticas relacionadas
-          à coleta, armazenamento e formas de uso de dados pela SENTRY-X
-          apresenta a presente Política de Privacidade.
+          A SENTRY-X TECHNOLOGY LTDA., inscrita no CNPJ/MF sob o nº
+          57.848.025/0001-67, com sede em R. Cornélio Benfica, 286, Nova Serrana
+          - MG, única e exclusiva proprietária das marcas e dos domínios
+          associados ao Site e ao Aplicativo doravante, em conjunto, denominados
+          simplesmente "SENTRY-X", com o objetivo de fornecer aos Usuários uma
+          visão transparente das práticas relacionadas à coleta, armazenamento e
+          formas de uso de dados pela SENTRY-X apresenta a presente Política de
+          Privacidade.
         </p>
       </section>
 
@@ -47,15 +48,17 @@ export const PrivacyPolicy = () => {
         <div className="space-y-4">
           <div className="flex items-center gap-3">
             <Mail className="h-6 w-6 text-primary" />
-            <span>Email: [EMAIL AQUI]</span>
+            <span>Email: contato@sentryx.com.br</span>
           </div>
           <div className="flex items-center gap-3">
             <Phone className="h-6 w-6 text-primary" />
-            <span>Telefone: [TELEFONE AQUI]</span>
+            <span>Telefone: +55 61 9868-0610</span>
           </div>
           <div className="flex items-start gap-3">
             <MapPin className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
-            <span>Correspondência: [ENDEREÇO COMPLETO AQUI]</span>
+            <span>
+              Correspondência: R. Cornélio Benfica, 286, Nova Serrana - MG
+            </span>
           </div>
         </div>
       </section>
@@ -623,7 +626,7 @@ export const PrivacyPolicy = () => {
             <AlertCircle className="h-5 w-5" />
             <AlertDescription>
               Em caso de suspeita de comprometimento da conta, entre em contato
-              imediatamente através do email [EMAIL AQUI]
+              imediatamente através do email contato@sentryx.com.br
             </AlertDescription>
           </Alert>
         </div>
@@ -671,9 +674,11 @@ export const PrivacyPolicy = () => {
         </p>
         <p>
           Para mais informações ou dúvidas, entre em contato através do email{" "}
-          <span className="text-primary font-medium">[EMAIL AQUI]</span> ou
-          telefone{" "}
-          <span className="text-primary font-medium">[TELEFONE AQUI]</span>.
+          <span className="text-primary font-medium">
+            contato@sentryx.com.br
+          </span>{" "}
+          ou telefone{" "}
+          <span className="text-primary font-medium">+55 61 9868-0610</span>.
         </p>
       </footer>
     </div>

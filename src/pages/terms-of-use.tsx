@@ -9,11 +9,11 @@ export const TermsOfUse = () => {
 
       <section className="space-y-4">
         <p className="text-lg leading-relaxed">
-          A SENTRY-X TECHNOLOGY LTDA., inscrita no CNPJ/MF sob o nº [CNPJ AQUI],
-          com sede em [ENDEREÇO AQUI], é a proprietária e desenvolvedora das
-          soluções tecnológicas oferecidas através de seu site e aplicativo,
-          doravante denominados "Plataforma SENTRY-X" ou simplesmente
-          "SENTRY-X".
+          A SENTRY-X TECHNOLOGY LTDA., inscrita no CNPJ/MF sob o nº
+          57.848.025/0001-67, com sede em R. Cornélio Benfica, 286, Nova Serrana
+          - MG, é a proprietária e desenvolvedora das soluções tecnológicas
+          oferecidas através de seu site e aplicativo, doravante denominados
+          "Plataforma SENTRY-X" ou simplesmente "SENTRY-X".
         </p>
         <p className="text-lg leading-relaxed">
           Este documento estabelece os termos e condições para utilização de
@@ -114,7 +114,7 @@ export const TermsOfUse = () => {
           </div>
           <p className="text-lg bg-muted/30 p-4 rounded-lg">
             2.2. Caso tenha dúvidas, entre em contato conosco antes de aceitar
-            os termos através do email [EMAIL AQUI].
+            os termos através do email contato@sentryx.com.br.
           </p>
         </div>
       </section>
@@ -390,8 +390,8 @@ export const TermsOfUse = () => {
             </h3>
             <ul className="space-y-3">
               {[
-                "Email: [EMAIL AQUI]",
-                "Telefone: [TELEFONE AQUI]",
+                "Email: contato@sentryx.com.br",
+                "Telefone: +55 61 9868-0610",
                 "Chat online (horário comercial)",
               ].map((item, index) => (
                 <li key={index} className="flex items-start gap-3">
@@ -472,9 +472,11 @@ export const TermsOfUse = () => {
         </p>
         <p>
           Para mais informações ou dúvidas, entre em contato através do email{" "}
-          <span className="text-primary font-medium">[EMAIL AQUI]</span> ou
-          telefone{" "}
-          <span className="text-primary font-medium">[TELEFONE AQUI]</span>.
+          <span className="text-primary font-medium">
+            contato@sentryx.com.br
+          </span>{" "}
+          ou telefone{" "}
+          <span className="text-primary font-medium">+55 61 9868-0610</span>.
         </p>
       </footer>
     </div>
