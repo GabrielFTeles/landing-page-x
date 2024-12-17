@@ -9,7 +9,6 @@ interface NavigationItem {
 export const navLinks: Array<NavigationItem> = [
   { href: "/", label: "Início" },
   { href: "/planos", label: "Preços" },
-  { href: "/", label: "Sobre" },
   { href: "/contato", label: "Contato" },
 ];
 

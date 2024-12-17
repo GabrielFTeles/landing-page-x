@@ -51,7 +51,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({ className }) => {
         <nav className="mt-6">
           <ul className="flex flex-col gap-3">
             {navLinks.map((link) => (
-              <li>
+              <li key={link.href}>
                 <Link onClick={closeMenu} to={link.href}>
                   <Button className="w-full rounded-sm">{link.label}</Button>
                 </Link>

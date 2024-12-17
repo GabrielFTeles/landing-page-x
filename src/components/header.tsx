@@ -34,12 +34,14 @@ export const Header = () => {
 
   return (
     <motion.header className={headerVariants({ scrolled: hasScrolled })}>
-      <div className="flex gap-4 justify-between items-center max-w-screen-2xl mx-auto px-8 xl:px-4">
+      <div className="flex gap-4 relative justify-between items-center max-w-screen-2xl mx-auto px-8 xl:px-4">
         <Link to="/">
           <h1 className="font-bold text-xl">🧠 Sentry-X</h1>
         </Link>
 
-        <Navigation />
+        <div className="absolute left-1/2 -translate-x-1/2">
+          <Navigation />
+        </div>
 
         <div className="flex gap-2">
           <ModeToggle />
