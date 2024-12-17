@@ -11,7 +11,7 @@ export const HeroSection = () => {
 
       <div className="max-w-[800px] mx-auto">
         <h1 className="hero-title text-center">
-          Análise empresarial com{" "}
+          Análise de dados com{" "}
           <span className="bg-gradient-to-r from-blue-600 to-violet-600 bg-clip-text text-transparent">
             IA
           </span>{" "}
@@ -34,7 +34,7 @@ export const HeroSection = () => {
           Agendar demonstração
         </Button>
         <Button size="lg" className="w-full sm:w-fit">
-          Experimente gratuitamente por 14 dias
+          Experimente gratuitamente por 7 dias
         </Button>
       </div>
 
@@ -44,7 +44,7 @@ export const HeroSection = () => {
         </div>
       </div>
 
-      <div className="mt-12 flex items-center gap-8 lg:flex-row flex-col justify-between lg:gap-2 max-w-screen-xl mx-auto">
+      <div className="mt-12 flex lg:items-center gap-8 lg:flex-row flex-col justify-between lg:gap-2 max-w-screen-xl mx-auto">
         <div className="flex gap-2 lg:max-w-[350px]">
           <div className="p-4 bg-blue-500/80 rounded-lg h-fit">
             <Brain className="text-white size-8" />

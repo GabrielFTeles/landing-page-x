@@ -10,7 +10,7 @@ interface Plan {
   custom?: boolean;
   title: string;
   description: string;
-  prices: {
+  prices?: {
     monthly: number;
     annual: number;
   };
@@ -94,11 +94,11 @@ const PricingCard: React.FC<PricingCardProps> = ({
   const activePrice = custom
     ? "CONSULTAR"
     : period === "monthly"
-    ? prices.monthly.toLocaleString("pt-br", {
+    ? prices?.monthly.toLocaleString("pt-br", {
         style: "currency",
         currency: "BRL",
       })
-    : prices.annual.toLocaleString("pt-br", {
+    : prices?.annual.toLocaleString("pt-br", {
         style: "currency",
         currency: "BRL",
       });

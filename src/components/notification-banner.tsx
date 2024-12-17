@@ -11,7 +11,7 @@ export function NotificationBanner() {
   return (
     <div className="bg-blue-600 text-white flex justify-center px-3 py-2">
       <p className="text-sm flex-1 text-center">
-        Aproveite nossa plataforma por 14 dias grátis e tenha certeza do
+        Aproveite nossa plataforma por 7 dias grátis e tenha certeza do
         potencial da nossa ferramenta!
       </p>
 

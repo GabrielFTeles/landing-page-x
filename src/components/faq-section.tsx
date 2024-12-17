@@ -21,11 +21,11 @@ const faqItems: Array<FaqItemType> = [
     answer:
       "Não! Nossa plataforma foi projetada para ser intuitiva e fácil de usar. Se você sabe fazer perguntas sobre seus dados, já está pronto para começar. A IA cuida de toda a parte técnica, desde a análise até a criação de visualizações.",
   },
-  {
-    question: "Quais tipos de dados posso conectar à plataforma?",
-    answer:
-      "Nossa plataforma aceita diversas fontes de dados, incluindo: planilhas Excel, CSV, bancos de dados SQL, Google Sheets, ferramentas de CRM como Salesforce, e APIs personalizadas. Se você tem uma fonte de dados específica, entre em contato conosco.",
-  },
+  // {
+  //   question: "Quais tipos de dados posso conectar à plataforma?",
+  //   answer:
+  //     "Nossa plataforma aceita diversas fontes de dados, incluindo: planilhas Excel, CSV, bancos de dados SQL, Google Sheets, ferramentas de CRM como Salesforce, e APIs personalizadas. Se você tem uma fonte de dados específica, entre em contato conosco.",
+  // },
   {
     question: "Meus dados estão seguros na plataforma?",
     answer:
@@ -34,7 +34,7 @@ const faqItems: Array<FaqItemType> = [
   {
     question: "Posso começar gratuitamente?",
     answer:
-      "Sim! Oferecemos um período de teste gratuito de 14 dias com acesso a nossa plataforma. Você pode experimentar funcionalidades sem compromisso e escolher o plano ideal após o período de teste.",
+      "Sim! Oferecemos um período de teste gratuito de 7 dias com acesso a nossa plataforma. Você pode experimentar funcionalidades sem compromisso e escolher o plano ideal após o período de teste.",
   },
   {
     question: "Quanto tempo leva para começar a usar?",
