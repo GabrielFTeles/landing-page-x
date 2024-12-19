@@ -3,7 +3,7 @@ import { ComparisonChart } from "./comparison-chart";
 export const DemoSection = () => {
   return (
     <section
-      className="px-4 pt-16 pb-60 bg-[#0B2540] dark:bg-gradient-to-r to-[#165598] from-[#003976]"
+      className="px-4 pt-16 pb-60 bg-[#0B2540] dark:bg-gradient-to-r to-[#144578] from-[#003976]"
       style={{
         clipPath: "polygon(0 0, 100% 0, 100% 85%, 0 100%)",
       }}
@@ -44,8 +44,6 @@ export const DemoSection = () => {
           <div className="p-6 border rounded-lg bg-background">
             <ComparisonChart />
           </div>
-
-          {/* <div className="p-6 border rounded-lg bg-muted"></div> */}
         </div>
       </div>
     </section>
