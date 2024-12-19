@@ -1,6 +1,7 @@
 import { CallToActionSection } from "@/components/call-to-action-section";
 import { DemoSection } from "@/components/demo-section/demo-section";
 import { FaqSection } from "@/components/faq-section";
+import { FeaturesSection } from "@/components/features-section";
 import { HeroSection } from "@/components/hero-section";
 import { HowToUseSection } from "@/components/how-to-use-section";
 import { PricingSection } from "@/components/pricing-section";
@@ -12,6 +13,7 @@ export const Home = () => {
       <HeroSection />
       <DemoSection />
       <HowToUseSection />
+      <FeaturesSection />
       <TestimonialSection />
       <PricingSection />
       <FaqSection />
